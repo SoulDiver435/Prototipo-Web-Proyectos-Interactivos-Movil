@@ -1,0 +1,1610 @@
+@font-face {
+  font-family: "Lexend Regular";
+  src: url(./fonts/lexend_font/static/Lexend-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Lexend Light";
+  src: url(./fonts/lexend_font/static/Lexend-Light.ttf);
+}
+
+@font-face {
+  font-family: "Lexend SemiBold";
+  src: url(./fonts/lexend_font/static/Lexend-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Lexend Bold";
+  src: url(./fonts/lexend_font/static/Lexend-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Lexend Extra Light";
+  src: url(./fonts/lexend_font/static/Lexend-ExtraLight.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 430px;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+nav a {
+    text-decoration: none; /* Quita el subrayado */
+    color: white; /* Cambia el color del texto del enlace */
+}
+
+
+header {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 215px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+#logoHeader {
+  width: 20%;
+  height: fit-content;
+  cursor: pointer;
+  /* background-color: aqua; */
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  display: flex;
+}
+
+#logoheaderimg {
+  width: 90%;
+  height: auto;
+}
+
+#barraBusqueda {
+  width: 50%;
+  height: 67px;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 25px;
+  border: 2px solid #525252;
+  padding: 0 25px 0 25px;
+}
+
+#botonBusqueda {
+  width: 124px;
+  height: 67px;
+  background-color: #cf2e2e;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -165px;
+  border: 2px solid #525252;
+  cursor: pointer;
+}
+
+#botonBusqueda:hover{
+  background-color: #9b1616;
+}
+
+#botonBusqueda:active{
+  background-color: #000000;
+}
+
+nav {
+  background-color: #a8382b;
+  display: flex;
+  height: 77px;
+  width: 100%;
+
+  flex-direction: row;
+  font-family: "Lexend Light";
+  color: white;
+  font-size: 28px;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+#listaNav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  height: auto;
+  width: 90%;
+  /* background-color: blue; */
+  padding: 0;
+  /* background-color: aqua; */
+}
+
+.liNav {
+  display: flex;
+  margin: 0 47px 0 47px;
+  cursor: pointer;
+  width: 50%;
+  height: 38px;
+  /* width: 20%; */
+  /* background-color: blueviolet; */
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: filter 0.2s ease;
+}
+
+#iconoCarrito,
+#iconoUsuario {
+  cursor: pointer;
+}
+
+/* -----------------CATEGORIAS -----------------*/
+
+#contCategoriasGlobal{
+ /* background-color: rgb(46, 224, 255); */
+ padding: 70px 120px 70px 120px;
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+
+}
+
+
+
+h3{
+margin:0;
+padding:0;
+font-family:"Lexend Light";
+font-size: 24px;
+color: #696868;
+}
+
+h3 a{
+  text-decoration: none;
+  color: #696868;
+}
+
+.encabezadoCategorias{
+  font-family: 'Lexend Semibold';
+  font-size: 64px;
+}
+
+.filaCategorias{
+  display: flex;
+  width: 100%;
+  /* background-color: blueviolet; */
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* align-content: center; */
+  justify-items: center;
+  
+
+}
+
+.contCategoria{
+  display: block;
+  /* flex-direction: column; */
+  /* background-color: blue; */
+  width: 44%;
+  margin: 0 0 30px 0;
+ 
+}
+
+.nombreCategoria{
+  font-family: 'Lexend Regular';
+  font-size: 28px;
+  /* background-color: chartreuse; */
+  width: 100%;
+}
+
+.imgCategorias{
+ margin: 0 0 30px 0;
+ width: 100%;
+ cursor: pointer;
+}
+
+#contFlechasNumeros{
+  display: flex;
+  text-align: center;
+  /* background-color: rgb(255, 255, 255); */
+  /* padding: 30px 0 30px 0; */
+  width: 100%;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+}
+
+.flechasCategorias{
+  margin: 0 20px 0 20px;
+  width: fit-content;
+  height: fit-content;
+}
+
+#contFlechasNumeros img{
+margin: 0 10px 0 10px;
+width: fit-content;
+height: fit-content;
+
+}
+
+/* CARRITO */
+
+.filaCarrito{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* background-color: aqua; */
+}
+
+#contProductosCarritoYResumen{
+  display: flex;
+  flex-direction: row;
+}
+
+.columnaCarrito{
+  width: 80%;
+}
+
+
+
+
+/* --------FOOTER------ */
+
+footer {
+  background-color: #a8382b;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 400px;
+  font-family: "Lexend Regular";
+  font-size: 24px;
+  color: white;
+  margin: 0;
+  border: 0 ;
+}
+
+.columnaFooter{
+    /* background-color: blue; */
+    width: 20%;
+    height: 140px;
+    margin: 0 35px 0 35px;
+}
+
+footer .columnaFooter ul{
+    /* background-color: coral; */
+    width: 100%;
+    padding-left: 0;  /* Elimina el padding del lado izquierdo del <ul> */
+    margin-left: 0; 
+}
+
+footer .columnaFooter ul li{
+    font-family: "Lexend Extra Light";
+    list-style: none;
+    /* margin-left: -40px; */
+    /* background-color: aqua; */
+    width: 100%;
+    list-style-type: none;  /* Elimina el marcador de lista */
+    list-style-position: inside;  /* Posiciona el marcador de lista dentro del <li> */
+    padding-left: 0;   /* Elimina el padding del lado izquierdo del <li> */
+    margin-left: 0;    /* Elimina el margen del lado izquierdo del <li> */
+    cursor: pointer;
+}
+
+.triangMenuDesp{
+  margin: 0 0 0 12px;
+  transition: filter 0.2s ease;
+}
+
+.triangMenuDesp:hover{
+filter: sepia(1) saturate(5) hue-rotate(10deg) ;
+}
+
+.liNav:hover{
+  filter: sepia(1) saturate(5) hue-rotate(10deg) ;
+}
+
+#contCategoriasGlobal a{
+text-decoration: none;
+color: black;
+}
+
+#menuHamburguesaDesplegado {
+  display: none;
+}
+
+#menuColeccionesDesplegado {
+  display: none;
+}
+
+#menuCategoriasDesp{
+  display: none;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------- */
+
+
+/* CATEGORIAS MOCHE */
+
+#imgCategoriaMoche{
+  width: 100%;
+}
+
+
+.contImgArticulo, .imgMoche {
+  margin: 0 0 20px 0;
+  cursor: pointer;
+  box-shadow: 8px 8px 16px #0000006e;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contNombreArticulo {
+  font-family: "Lexend SemiBold";
+  font-size: 28px;
+  margin: 0 0 35px 0;
+}
+
+.contPrecioArticulo {
+  font-family: "Lexend Bold";
+  font-size: 28px;
+  color: #cf2e2e;
+}
+
+/* FILA MOCHE */
+
+.filaMoche{
+  display: flex;
+  flex-direction: row;
+  /* background-color: blue; */
+  width: 80%;
+  justify-content: space-around;
+  padding: 0 0 70px 0 ;
+}
+
+#contMocheGlobal{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center ;
+  /* background-color: chocolate; */
+  padding: 70px 0 0 0 ;
+  width: 100%;
+}
+
+.indiceOrdenar{
+  font-family: 'Lexend Regular';
+  font-size: 28px;
+}
+
+#contIndiceyOrdenar{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: aqua; */
+  margin: 0 0 70px 0;
+}
+
+.contElementoMoche{
+  /* background-color: aqua; */
+  width: 20.3%;
+}
+
+.imgMoche{
+  width: 100%;
+}
+
+/* #contIndiceyOrdenar h3{
+  /* background-color: #cf2e2e; */
+/* } */ 
+
+
+/* CARRITO DE COMPRAS */
+
+#contCarritoGlobal{
+  width: 100%;
+  /* background-color: aqua; */
+  padding: 90px 110px 0 110px;
+}
+
+.indiceCarrito{
+  /* background-color: chocolate; */
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: aqua; */
+  margin: 0 0 70px 0;
+}
+
+#filaAtributosCarrito{
+  display: flex;
+  flex-direction: row;
+  width: 66%;
+  /* background-color: #ffa8a8; */
+  justify-content: space-between;
+  margin: 0 0 70px 0;
+}
+
+.atributosCarrito{
+  font-size: 28px;
+  font-family: 'Lexend SemiBold';
+}
+
+.columnaCarrito{
+  width: 70%;
+  /* background-color: burlywood; */
+}
+
+.contImgCarrito{
+  width: 202px;
+  /* background-color: cornflowerblue; */
+}
+
+.imgProdCarrito{
+  width: 100%;
+}
+
+.nombreProdCarrito{
+  font-size: 28px;
+  font-family: 'Lexend SemiBold';
+}
+
+.precioProdCarrito{
+  font-family: "Lexend Bold";
+  font-size: 28px;
+  color: #cf2e2e;
+  /* background-color: chartreuse; */
+  height: fit-content;
+}
+
+.cantidad{
+  display: flex;
+  font-family: 'Lexend SemiBold';
+  font-size: 24px;
+  width: 11.8%;
+  height: 40px;
+  background-color: #D8D8D8 ;
+  white-space: pre;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+.totalCarrito{
+  display: flex;
+  flex-direction: row;
+  font-family: "Lexend Bold";
+  font-size: 28px;
+  color: #cf2e2e;
+  /* background-color: deepskyblue; */
+  align-items: center;
+  justify-content: center;
+  height: fit-content; 
+  width: 19%;
+}
+
+/* .nombreYPrecio{
+  margin: 0 10px 0 10px;
+} */
+
+.filaCarrito{
+  /* background-color: darkseagreen; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  margin: 0 0 100px 0;
+  
+}
+
+.iconoCancelarCarrito{
+  height: fit-content;
+  /* background-color: #cf2e2e; */
+  margin: 0 0 0 25px;
+}
+
+.nombreYPrecio{
+  /* background-color: aqua; */
+  width: 25%;
+}
+
+/* RESUMEN */
+
+.columnaResumen{
+  /* background-color: darksalmon; */
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items:end;
+}
+
+.cajaGrisResumen1{  
+  display: flex;
+  flex-direction: column;
+  background-color: #D8D8D8;
+  width: 88%;
+  height: 409px;
+  justify-content: center;
+  border-radius: 25px 25px 0 0;
+}
+
+.cajaGrisResumen2{
+  background-color: #EBEBEB;
+  width: 88%;
+  display: flex;
+  flex-direction: row;
+  height: 117px;
+  align-items: center;
+  border-radius: 0 0 25px 25px;
+  margin-bottom: 35px;
+}
+
+#encabezadoCarrito{
+  margin: 0 0 140px 0;
+}
+
+.lineaCarrito{
+  border: 1px solid #9B0707;
+  width: 100%;
+  margin: 0;
+}
+
+.textoResumen{
+  font-size: 28px;
+  font-family: 'Lexend SemiBold';
+  /* background-color: aqua; */
+  width: 48%;
+  height: fit-content;
+  margin-left: 45px;
+  margin-right: 10px;;
+  
+}
+
+#tienes3{
+  width: 63%;
+}
+
+.totalPorSusProductos{
+  /* background-color: #87eee5; */
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.notequedes{
+  font-size: 28px;
+  font-family: 'Lexend SemiBold';
+}
+
+.regresarAComprar{
+  font-size: 28px;
+  font-family: 'Lexend SemiBold';
+  color: #CF2E2E;
+}
+
+.botonComprar{
+  display: flex;
+  font-size: 32px;
+  font-family: 'Lexend Bold';
+  color: white;
+  background-color: #CF2E2E;
+  width:88%;
+  margin: 0;
+  height: 73px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.botonComprar:hover{
+  background-color: #9b1616 ;
+}
+
+.botonComprar:active{
+  background-color: #000000;
+}
+
+/* .cajaBotonComprar{
+  width:100%;
+  text-align: center;
+} */
+
+.notequedes, .regresarAComprar {
+  width: 88%;
+  text-align: center;
+  margin: 0 0 30px 0;
+  height: fit-content;
+  /* background-color: #87eee5; */
+}
+
+/* -------PRODUCTOS------ */
+
+#contProductosGlobal{
+  width: 100%;
+  /* background-color: aqua; */
+  padding: 76px 123px 0 123px;
+}
+
+.bannerProductos{
+  width: 100%;
+  height: fit-content;
+}
+
+.contProductos{
+  width: 100%;
+  /* background-color: burlywood; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.filaProductos{
+  width: 90%;
+  /* background-color: brown; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contArticuloProductos{
+  /* background-color: blue; */
+  width: 39.9%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 54px;
+}
+
+.nombreProducto{
+  font-size: 28px ;
+  font-family: 'Lexend Light';
+  margin-bottom: 35px;
+}
+
+.verMas{
+  font-size: 28px;
+  font-family: 'Lexend Regular';
+  color: #CF2E2E;
+  cursor: pointer;
+}
+
+.nombreProducto, .verMas {
+  margin-left: 15px;
+}
+
+.imgProductos{
+  margin-bottom: 35px;
+  cursor: pointer;
+}
+
+#contIndiceyOrdenarMovil{
+  display: none;
+}
+
+#contProductosCarritoyResumenMovil{
+  display: none;
+}
+
+.imgProductos{
+  box-shadow: 8px 8px 16px #0000006e;
+  border-radius: 20px;
+}
+
+/* --------------------------------------------- */
+
+
+  nav {
+    display: none;
+  }
+
+  #barraBusqueda{
+    display: none;
+  }
+
+  #botonBusqueda{
+    display: none;
+  }
+
+  #imgLogoHuacaArcana {
+    /* background-color: rgb(86, 177, 212); */
+    width: 45%;
+  }
+
+  footer {
+    font-size: 19px;
+  }
+
+  .columnaFooter{
+    /* background-color: blue; */
+    margin: 0 15px 0 15px;
+    width: 23%;
+ 
+}
+
+
+
+
+  nav {
+    display: none;
+  }
+
+  #barraBusqueda {
+    display: none;
+  }
+
+  #botonBusqueda {
+    display: none;
+  }
+
+  #imgLogoHuacaArcana {
+    /* background-color: rgb(86, 177, 212); */
+    width: 45%;
+  }
+
+  footer {
+    font-size: 19px;
+  }
+
+  .columnaFooter {
+    /* background-color: blue; */
+    margin: 0 15px 0 15px;
+    width: 23%;
+  }
+
+  #iconoCarrito,
+  #iconoUsuario {
+    cursor: pointer;
+  }
+
+  .encabezadoSecciones {
+    font-size: 18px;
+    margin: 0 0 28px 44px;
+  }
+
+  #loUltimo {
+    width: 100%;
+    /* background-color: rgb(255, 161, 161); */
+    margin: 0;
+    display: block;
+    padding: 26px 0 26px 0;
+    height: fit-content;
+  }
+
+  /* #contArticulosMasPedidos{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: aqua;
+} */
+
+  #masPedidos {
+    /* background-color: burlywood; */
+    width: 100%;
+    margin: 0;
+    display: block;
+    padding: 26px 0 26px 0;
+    height: fit-content;
+  }
+
+  /* .contNombreArticulo{
+  font-size: 15px;
+  margin: 0 0 5px 0;
+}
+
+.contPrecioArticulo{
+  font-size: 15px;
+}*/
+
+  .contArticuloGlobal {
+    display: none;
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    /* background-color: aqua; */
+  }
+  .swiper-wrapper {
+    display: flex; /* Asegura que los slides se alineen en una fila */
+    height: fit-content;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fcaeae; */
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .imgSliderUltimo {
+    width: 90%;
+    cursor: pointer;
+  }
+
+  .nombreProdUltimoSlider {
+    /* background-color: #a8382b; */
+    width: 90%;
+    /* padding-left: 15px; */
+    font-size: 15px;
+    font-family: "Lexend Regular";
+    text-align: start;
+  }
+
+  .precioProdUltimoSlider {
+    /* background-color: burlywood; */
+    width: 90%;
+    /* padding-left: 15px; */
+    font-size: 15px;
+    font-family: "Lexend Regular";
+    color: #a8382b;
+    text-align: start;
+  }
+
+  /* Cambiar color de las flechas del slider */
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #a8382b; /* Cambia #ff0000 por el color que desees */
+  }
+
+  #slider {
+    display: none;
+  }
+
+  #sliderMovil {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+
+  #sliderMovil img {
+    width: 100%;
+  }
+
+  .encabezadoUnicos {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+
+  #unicos {
+    padding: 20px 0 20px 0;
+    height: fit-content;
+    display: flex;
+  }
+
+  #contTodosArticulosUnicos {
+    display: none;
+  }
+
+  .sliderUnicos {
+    width: 100%;
+    height: fit-content;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .sliderUnicos .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: aqua; */
+    width: 100%;
+    height: fit-content;
+  }
+
+  .sliderUnicos img {
+    width: 90%;
+    height: auto;
+  }
+
+  .sliderUnicos .swiper-wrapper {
+    display: flex; /* Asegura que los slides se alineen en una fila */
+    width: 100%;
+  }
+
+  #quienesSomos {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* background-color: aqua; */
+    padding: 20px 35px 20px 35px;
+    height: 178px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #tituloQuienesSomos {
+    font-size: 15px;
+    width: fit-content;
+    margin: 0 0 15px 0;
+  }
+
+  .cuerpoTexto {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  #textoQuienesSomos {
+    width: 75%;
+    /* background-color: #cf2e2e; */
+    margin-right: 5px;
+  }
+
+  #imgLogoHuacaArcana {
+    margin: 0;
+    width: 75%;
+  }
+
+  #contSecciones {
+    height: fit-content;
+  }
+
+  /* FOOTER */
+  footer {
+    background-color: #a8382b;
+    display: grid; /* Cambiar a grid */
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(150px, 1fr)
+    ); /* Define un grid flexible con columnas automáticas */
+    gap: 10px; /* Espaciado entre columnas */
+    width: 100%;
+    height: 257px;
+    font-family: "Lexend Regular";
+    font-size: 24px;
+    color: white;
+    padding: 10px; /* Opcional: Añade un poco de padding alrededor */
+    box-sizing: border-box; /* Asegura que el padding no haga que el footer se desborde */
+  }
+
+  .columnaFooter {
+    /* background-color: #525252; */
+    padding: 10px; /* Añade algo de espacio dentro de cada columna */
+    width: 85%;
+    height: 70%;
+  }
+
+  footer .columnaFooter ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  footer .columnaFooter ul li {
+    font-family: "Lexend Extra Light";
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    height: fit-content;
+  }
+
+  .encabFooter {
+    font-size: 12px;
+    width: 100%;
+    margin-bottom: 13px;
+  }
+
+  footer li {
+    font-size: 11px;
+    height: 30px;
+    display: flex;
+    justify-content: unset;
+    align-items: unset;
+  }
+
+  /* HEADER */
+
+  #contMenuHambur {
+    display: flex;
+    width: 25%;
+    height: 42%;
+    cursor: pointer;
+  }
+
+  .menuHambur {
+    height: 100%;
+    margin-left: 25px;
+  }
+
+  #iconoCarrito,
+  #iconoUsuario {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    height: 91px;
+    justify-content: space-around;
+  }
+
+  #logoHeader {
+    width: fit-content;
+    height: 100%;
+    /* margin-right: 15px; */
+    margin-right: 125px;
+  }
+
+  #logoheaderimg {
+    height: 70%;
+  }
+
+  #menuHamburguesaDesplegado {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #f5e4cf;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+
+  #menuHamburguesaDesplegado ul li {
+    list-style-type: none;
+    font-size: 20px;
+    font-family: "Lexend Regular";
+    /* background-color: #B87F55; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 26px;
+    cursor: pointer;
+  }
+
+  #menuHamburguesaDesplegado a{
+    cursor: pointer;
+  }
+
+  #menuHamburguesaDesplegado ul {
+    padding-left: 0; /* Elimina el padding del lado izquierdo del <ul> */
+    margin-left: 0;
+    width: 87%;
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+
+  .lineaHamb {
+    width: 85%;
+    /* color: #B87F55; */
+    /* background-color: #B87F55; */
+    border: solid 0.1px #b87f55;
+    margin: 0 auto 0 auto;
+  }
+
+  .seccion1Hamb {
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    width: 100%;
+    height: 398px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flechaHamb {
+    height: fit-content;
+  }
+
+  .seccion2Hamb {
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    width: 100%;
+    height: 203px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .seccion3Hamb {
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    width: 100%;
+    height: 348px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .seccionRedesHamb {
+    display: flex;
+    flex-direction: row;
+    /* background-color: aqua; */
+    width: 40%;
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px;
+  }
+
+  /* .cerrarMenuHamb{
+  width: 85%;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 15px 0 0 0 ;
+} */
+
+  /* COLECCIONES DESPLEGADO */
+
+  #menuColeccionesDesplegado {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2000;
+    background-color: #f5e4cf;
+    width: 100%;
+    height: 100%;
+  }
+
+  #menuColeccionesDesplegado ul {
+    padding-left: 0; /* Elimina el padding del lado izquierdo del <ul> */
+    margin-left: 0;
+    width: 85%;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+
+  #menuColeccionesDesplegado .seccion1Colec ul li {
+    list-style-type: none;
+    font-size: 18px;
+    font-family: "Lexend Regular";
+    /* background-color: #B87F55; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 26px;
+    cursor: pointer;
+  }
+
+  #menuColeccionesDesplegado a {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .seccion1Colec {
+    height: 690px;
+  }
+
+  .seccion2Colec {
+    height: 265px;
+  }
+
+  .seccion2Colec li {
+    margin: 15px 0 15px 0;
+  }
+
+  .tituloCategoriasHamb {
+    font-size: 24px;
+    font-family: "Lexend SemiBold";
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #da7a22;
+    margin-top: 45px;
+    /* background-color: blue; */
+  }
+
+  .desplegarMenuCateg {
+    height: fit-content;
+  }
+
+  /* CATEGORIAS DESPLEGADAS */
+
+  #menuCategoriasDesp {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1200;
+    background-color: #f5e4cf;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+
+  #menuCategoriasDesp ul {
+    padding-left: 0; /* Elimina el padding del lado izquierdo del <ul> */
+    margin: 0;
+    width: 85%;
+    margin-top: 39px;
+    margin-bottom: 25px;
+    /* background-color: #cf2e2e; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #menuCategoriasDesp ul li{
+    padding-left: 0; /* Elimina el padding del lado izquierdo del <ul> */
+    margin: 0 0 15px 0;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .tituloCategoriasDespHamb {
+    margin:0 0 15px 0;
+    font-size: 24px;
+    font-family: "Lexend SemiBold";
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #da7a22;
+    /* background-color: #B87F55; */
+  }
+
+
+
+  .seccionCategoriasDesp {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* ----------------------CATEGORIA MOCHE---------------------- */
+
+  .filaMoche{
+  display: grid;
+  grid-template-columns: repeat(
+    2,
+    minmax(150px, 1fr)
+  ); /* Define un grid flexible con columnas automáticas */
+  gap: 15px; /* Espaciado entre columnas */
+  width: 100%;
+  /* background-color: aqua; */
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  }
+
+  #contIndiceyOrdenar{
+    display: none;
+  }
+
+  #contIndiceyOrdenarMovil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+  }
+  
+  .indiceColeccionesMoche{
+    font-size: 24px;
+  }
+
+  .indiceOrdenar{
+    font-size: 24px;
+  }
+
+  .contNombreArticulo{
+    font-size: 22px ;
+    margin-bottom: 10px;
+  }
+
+  .contElementoMoche{
+    width: 90%;
+  }
+
+  #contMocheGlobal{
+  padding-top: 25px;
+  }
+
+  .contPrecioArticulo{
+    font-size: 25px;
+  }
+
+  .imgMoche{
+    margin-bottom: 10px;
+  }
+
+  br{
+    display: none;
+  }
+
+  .indiceCarrito{
+    display: none;
+  }
+
+  #encabezadoCarrito{
+    font-size: 24px;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  #contCarritoGlobal{
+    padding: 25px;
+  }
+
+  #filaAtributosCarrito{
+    display: none;
+  }
+
+  #contProductosCarritoYResumen{
+    display: none;;
+  }
+
+  #contProductosCarritoyResumenMovil{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contProdCarritoMovil{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(
+      2,
+      minmax(60px, 1fr)
+    ); /* Define un grid flexible con columnas automáticas */
+    gap: 25px; /* Espaciado entre columnas */
+    height: 167px;
+    margin-bottom: 55px;
+    
+  }
+
+  .infoProdCarritoMovil{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contImgCarritoMovil{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    /* background-color: #da7a22; */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .imgCarritoMovil{
+    height: 100%;
+    width: fit-content;
+  }
+
+  .iconoCancelarCarritoMovil{
+    height: 20%;
+    width: fit-content;
+  }
+
+  .nombreProdCarritoMovil, .precioProdCarritoMovil{
+    font-size: 20px;
+    font-family: 'Lexend Regular';
+  }
+
+  .precioProdCarritoMovil{
+    font-weight: bold;
+    color: #9B0707;
+  }
+
+  .contCantidadCarritoMovil{
+    background-color: #D8D8D8;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    font-size: 18px;
+    font-family: 'Lexend Regular';
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    
+  }
+
+  .infoProdCarritoMovil{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  /* RESUMEN CARRITO MOVIL */
+
+  .contResumenCarritoMovil{
+    width: 100%;
+    /* background-color: #da7a22; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .contResumenGris1{
+    background-color: #D8D8D8;
+    height: 272px;
+    /* padding: 25px 30px 25px 30px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px 0 15px 0;
+    width: 90%;
+    border-radius: 25px 25px 0 0;
+  }
+
+  .contResumenGris2{
+    background-color: #EBEBEB;
+    height: 95px;
+    /* padding: 25px 30px 25px 30px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    border-radius: 0 0 25px 25px;
+  }
+
+  .contResumenblanco{
+    background-color: white;
+    height: 116px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .botonComprarMovil{
+    background-color: #CC0000;
+    color: white;
+    font-family: 'Lexend Bold';
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    width: 90%;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .botonComprarMovil:active{
+    background-color: #000000;
+  }
+
+  .contResumenTxtNegro, .notequedesMovil, .regresarAComprarMovil{
+    font-family: 'Lexend SemiBold';
+    font-size: 20px;
+  }
+
+  .contResumenTxtNegro{
+    /* background-color: aqua; */
+    width: 65%;
+    margin-left: 25px ;
+  }
+
+  .regresarAComprarMovil{
+    color: #CF2E2E;
+  }
+
+  .lineaCarritoMovil{
+    /* color: #9B0707; */
+    background-color: #9B0707;
+    border: 0.5px solid #9B0707;
+    width: 100%;
+  }
+
+  .totalySubMovil{
+    /* background-color: #da7a22; */
+    width: 50%;
+  }
+   
+  .contTotalResumenMovil, .contSubtotalResumenMovil {
+    display: flex;
+    /* background-color: aqua; */
+  }
+   
+  .totalCarritoTxtMovil{
+    font-size: 20px;
+    font-family: 'Lexend SemiBold';
+    color: #CF2E2E;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contIndiceyOrdenar{
+    display: none;
+  }
+
+  .encabezadoCategorias{
+    font-size: 24px;
+    width: 72%;
+    margin-bottom: 45px;
+  }
+
+  #contProductosGlobal{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filaProductos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contProductos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contArticuloProductos{
+    width: 85%;
+    margin-bottom: 35px;
+  }
+
+  .imgProductos{
+    margin-bottom: 20px;
+  }
+  
+  .nombreProducto{
+    margin-bottom: 15px;
+  }
+
+
+
